@@ -5,7 +5,7 @@ data "aws_availability_zones" "available" {
 
 # Create the Virtual Private Cloud (VPC), recommended for EC2 to resolve hostnames
 resource "aws_vpc" "main" {
-  cidr_block           = var.vpc_cidr
+  cidr_block           = var.vpc_cidrv
   enable_dns_hostnames = true
 
   tags = {
